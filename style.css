@@ -23,10 +23,12 @@ body {
   padding: 15px;
 }
 
-img.resize {
-  max-width:50%;
-  max-height:50%;
+.image {
+	width: 700px;
+	height: 500px;
 }
+
+
 
 
 

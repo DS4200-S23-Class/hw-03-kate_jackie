@@ -4,15 +4,13 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset=utf-8/>
+    <title> hw-03 </title>
 </head>
 
 
 <body>
-
-    <!-- title and header -->
-    <title> hw-03 </title>
-
-    <h1 class = "center">
+    
+    <h1 class = "center" id = "header">
         hw-03: Interactive Webpage, and Marks & Channels
     </h1>
 
@@ -141,8 +139,8 @@
     <!-- third row: our own visualization -->
     <div class='row 3'>
     <div class='column'>
-      <div class>
-        blah blah
+      <div>
+        <img src="img/vis3.png" class = "image">
       </div>
     </div>
     <div class='column'>
@@ -194,6 +192,17 @@
 <p class = "center">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</p>
 
 <p class = "center">https://www.w3schools.com/html/html_lists.asp</p>
+
+<div>
+    <button type = "button" onClick = "buttonClicked()">
+        CLICK ME!
+    </button>
+
+    <div id = "button-div" class = "gen">
+        Text inside of the button div
+    </div>
+
+</div>
 
 <script src="main.js"></script> 
 </body>
