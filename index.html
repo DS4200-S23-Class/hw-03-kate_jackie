@@ -14,196 +14,191 @@
         hw-03: Interactive Webpage, and Marks & Channels
     </h1>
 
-<div class='page-wrapper'>
-    <!-- first row -->     
-    <div class='row'>
-    <div class='column'>
-      <div>
-        <img src= "img/vis1.png">
+    <div>
+        <button type = "button" onClick = "changeStyle()">
+            CLICK ME!
+        </button>
+    </div>
+
+    <div class='page-wrapper'>
+        <!-- first row -->     
+        <div class='row'>
+        <div class='column'>
+          <div>
+            <img src= "img/vis1.png">
+          </div>
+        </div>
+        <div class='column'>
+          <div>
+            <h2>Marks</h2>
+                <ul> 
+                    <li>Area</li>
+                    <ul>
+                        <li>The bar at the top of the page uses area marks to represent electoral votes for each candidate
+                        </li>
+                        <li>The map uses an area mark to represent each state
+                        </li>
+                    </ul>
+                </ul>
+
+                <h2>Channels</h2>
+                <ul> 
+                    <li>Color (hue)</li>
+                    <ul>
+                        <li>Both the bar and the map use color to represent Clinton vs. Trump (categorical)
+                        </li>
+                        <li>This is a good mapping because it clearly differentiates between the two categories being represented
+                        </li>
+                    </ul>
+                    <li>Length</li>
+                    <ul>
+                        <li>The bar uses length to represent the proportion/number of votes going to each candidate (ordered quantitative, discrete)</li>
+                        <li>
+                            This is a good encoding because it effectively communicates proportions where 
+                            gleaning that just from the map below it may have been less accurate
+                        </li>
+                    </ul>
+                </ul>
+
+                <h2>Color Map(s)</h2>
+                <ul>
+                    <li>Categorical</li>
+                    <ul>
+                        <li>
+                            Represents political party/candidate. Specifically, blue = Clinton and red = Trump (categorical)
+                        </li>
+                        <li>
+                            This is a good mapping because the attribute is categorical and people in the United States (likely the location of 
+                            the target users) tend to associate blue with the democratic party and red with the republican party. 
+                            The contrasting colors also make it easy to differentiate between the two categories. 
+                        </li>
+                    </ul>
+                </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- second row -->
+      <div class='row 2'>
+        <div class='column'>
+          <div class>
+            <img src="img/vis2.png">
+          </div>
+        </div>
+        <div class='column'>
+          <div>
+            <h2>Marks</h2>
+                <ul> 
+                    <li>Points</li>
+                    <ul>
+                        <li>Each point on the graph represents a batted ball</li>
+                    </ul>
+                    <li>Lines</li>
+                    <ul>
+                        <li>Different lines on the graph indicate what type of ball each region of the graph represents</li>
+                    </ul>
+                </ul>
+
+                <h2>Channels</h2>
+                <ul> 
+                    <li>Position on a common scale (both horizontal and vertical)</li>
+                    <ul>
+                        <li>Represents exit velocity vs. launch angle (ordered quantitative, continuous)</li>
+                        <li>This is a good mapping because it makes it easy to see the relationship between the two variables</li>
+                    </ul>
+                    <li>Color (saturation)</li>
+                    <ul>
+                        <li>Represents where the scoring value of the ball falls relative to the average scoring value (ordered quantitative)</li>
+                        <li>
+                            This is a good mapping because it is a good representation of an ordered attribute and clearly groups
+                            above vs. below average. Still, this channel gives up some of the discriminability of where the points fall on
+                            the scale, especially at the high and low ends of the spectrum.
+                        </li>
+                    </ul>
+                    <li>Color (hue)</li>
+                    <ul>
+                        <li>Represents if the scoring value of the ball was below average, average, or above average (categorical)</li>
+                        <li>
+                            This is a good mapping because clearly groups above vs. below average. 
+                        </li>
+                    </ul>
+                </ul>
+
+                <h2>Color Map(s)</h2>
+                <ul>
+                    <li>Divergent</li>
+                    <ul>
+                        <li>
+                            Represents the scoring value of the ball relative to the average scoring value (ordered quantitative)
+                        </li>
+                        <li>
+                            This is a good mapping because it is used to indicate a range of values with the average represented with a neutral color in the middle.
+                            The low saturation of the colors chosen help decrease the chance of color impacting users' perception of the proportion of each category
+                        </li>
+                    </ul>
+                </ul>
+          </div>
+        </div>
+      </div>
+
+        <!-- third row: our own visualization -->
+        <div class='row 3'>
+        <div class='column'>
+          <div>
+            <img src="img/vis3.png" class = "image">
+          </div>
+        </div>
+        <div class='column'>
+          <div>
+            <h2>Marks</h2>
+                <ul> 
+                    <li>Points</li>
+                    <ul>
+                        <li>
+                            Each point on the graph represents one football game
+                        </li>
+                    </ul>
+                </ul>
+
+                <h2>Channels</h2>
+                <ul> 
+                    <li>Position on a common scale (both horizontal and vertical)</li>
+                    <ul>
+                        <li>Represents the Super Bowl number vs. total viewers watching a given game (ordered ordinal)</li>
+                        <li>This is a good mapping because there it is able to show the growing trend of the number of viewers.</li>
+                    </ul>
+
+                    <li>Color</li>
+                    <ul>
+                        <li>Represents the network that is streaming the game during a given year (categorical)</li>
+                        <li>This is a good mapping because it clearly represents the different channels that are broadcasting a Super Bowl during a given year.</li>
+                    </ul>
+                </ul>
+
+                <h2>Color Map(s)</h2>
+                <ul>
+                    <li>Categorical</li>
+                    <ul>
+                        <li>
+                            Represents the network that is streaming the Super Bowl during a given year
+                        </li>
+                        <li>
+                            This is a good mapping because it is used to represent a different channel. The colors are easy to differentiate, and they are roughly the same saturation
+                        </li>
+                    </ul>
+                </ul>
+          </div>
+        </div>
       </div>
     </div>
-    <div class='column'>
-      <div>
-        <h2>Marks</h2>
-            <ul> 
-                <li>Area</li>
-                <ul>
-                    <li>The bar at the top of the page uses area marks to represent electoral votes for each candidate
-                    </li>
-                    <li>The map uses an area mark to represent each state
-                    </li>
-                </ul>
-            </ul>
 
-            <h2>Channels</h2>
-            <ul> 
-                <li>Color (hue)</li>
-                <ul>
-                    <li>Both the bar and the map use color to represent Clinton vs. Trump (categorical)
-                    </li>
-                    <li>This is a good mapping because it clearly differentiates between the two categories being represented
-                    </li>
-                </ul>
-                <li>Length</li>
-                <ul>
-                    <li>The bar uses length to represent the proportion/number of votes going to each candidate (ordered quantitative, discrete)</li>
-                    <li>
-                        This is a good encoding because it effectively communicates proportions where 
-                        gleaning that just from the map below it may have been less accurate
-                    </li>
-                </ul>
-            </ul>
+    <h2 class = "center">Acknowledgements</h2>\
 
-            <h2>Color Map(s)</h2>
-            <ul>
-                <li>Categorical</li>
-                <ul>
-                    <li>
-                        Represents political party/candidate. Specifically, blue = Clinton and red = Trump (categorical)
-                    </li>
-                    <li>
-                        This is a good mapping because the attribute is categorical and people in the United States (likely the location of 
-                        the target users) tend to associate blue with the democratic party and red with the republican party. 
-                        The contrasting colors also make it easy to differentiate between the two categories. 
-                    </li>
-                </ul>
-            </ul>
-      </div>
-    </div>
-  </div>
+    <p class = "center">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</p>
 
+    <p class = "center">https://www.w3schools.com/html/html_lists.asp</p>
 
-  <!-- second row -->
-  <div class='row 2'>
-    <div class='column'>
-      <div class>
-        <img src="img/vis2.png">
-      </div>
-    </div>
-    <div class='column'>
-      <div>
-        <h2>Marks</h2>
-            <ul> 
-                <li>Points</li>
-                <ul>
-                    <li>Each point on the graph represents a batted ball</li>
-                </ul>
-                <li>Lines</li>
-                <ul>
-                    <li>Different lines on the graph indicate what type of ball each region of the graph represents</li>
-                </ul>
-            </ul>
-
-            <h2>Channels</h2>
-            <ul> 
-                <li>Position on a common scale (both horizontal and vertical)</li>
-                <ul>
-                    <li>Represents exit velocity vs. launch angle (ordered quantitative, continuous)</li>
-                    <li>This is a good mapping because it makes it easy to see the relationship between the two variables</li>
-                </ul>
-                <li>Color (saturation)</li>
-                <ul>
-                    <li>Represents where the scoring value of the ball falls relative to the average scoring value (ordered quantitative)</li>
-                    <li>
-                        This is a good mapping because it is a good representation of an ordered attribute and clearly groups
-                        above vs. below average. Still, this channel gives up some of the discriminability of where the points fall on
-                        the scale, especially at the high and low ends of the spectrum.
-                    </li>
-                </ul>
-                <li>Color (hue)</li>
-                <ul>
-                    <li>Represents if the scoring value of the ball was below average, average, or above average (categorical)</li>
-                    <li>
-                        This is a good mapping because clearly groups above vs. below average. 
-                    </li>
-                </ul>
-            </ul>
-
-            <h2>Color Map(s)</h2>
-            <ul>
-                <li>Divergent</li>
-                <ul>
-                    <li>
-                        Represents the scoring value of the ball relative to the average scoring value (ordered quantitative)
-                    </li>
-                    <li>
-                        This is a good mapping because it is used to indicate a range of values with the average represented with a neutral color in the middle.
-                        The low saturation of the colors chosen help decrease the chance of color impacting users' perception of the proportion of each category
-                    </li>
-                </ul>
-            </ul>
-      </div>
-    </div>
-  </div>
-
-    <!-- third row: our own visualization -->
-    <div class='row 3'>
-    <div class='column'>
-      <div>
-        <img src="img/vis3.png" class = "image">
-      </div>
-    </div>
-    <div class='column'>
-      <div>
-        <h2>Marks</h2>
-            <ul> 
-                <li>Points</li>
-                <ul>
-                    <li>
-                        Each point on the graph represents one football game
-                    </li>
-                </ul>
-            </ul>
-
-            <h2>Channels</h2>
-            <ul> 
-                <li>Position on a common scale (both horizontal and vertical)</li>
-                <ul>
-                    <li>Represents the Super Bowl number vs. total viewers watching a given game (ordered ordinal)</li>
-                    <li>This is a good mapping because there it is able to show the growing trend of the number of viewers.</li>
-                </ul>
-
-                <li>Color</li>
-                <ul>
-                    <li>Represents the network that is streaming the game during a given year (categorical)</li>
-                    <li>This is a good mapping because it clearly represents the different channels that are broadcasting a Super Bowl during a given year.</li>
-                </ul>
-            </ul>
-
-            <h2>Color Map(s)</h2>
-            <ul>
-                <li>Categorical</li>
-                <ul>
-                    <li>
-                        Represents the network that is streaming the Super Bowl during a given year
-                    </li>
-                    <li>
-                        This is a good mapping because it is used to represent a different channel. The colors are easy to differentiate, and they are roughly the same saturation
-                    </li>
-                </ul>
-            </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<h2 class = "center">Acknowledgements</h2>\
-
-<p class = "center">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</p>
-
-<p class = "center">https://www.w3schools.com/html/html_lists.asp</p>
-
-<div>
-    <button type = "button" onClick = "buttonClicked()">
-        CLICK ME!
-    </button>
-
-    <div id = "button-div" class = "gen">
-        Text inside of the button div
-    </div>
-
-</div>
-
-<script src="main.js"></script> 
+    <script src="main.js"></script> 
 </body>
 </html>
